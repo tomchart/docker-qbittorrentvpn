@@ -220,6 +220,6 @@ ADD qbittorrent/ /etc/qbittorrent/
 RUN chmod +x /etc/qbittorrent/*.sh /etc/qbittorrent/*.init /etc/openvpn/*.sh
 
 EXPOSE 8080
-EXPOSE 8999
-EXPOSE 8999/udp
+EXPOSE 35060
+EXPOSE 35060/udp
 CMD ["/bin/bash", "/etc/openvpn/start.sh"]

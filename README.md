@@ -17,7 +17,7 @@ Docker container which runs the latest [qBittorrent](https://github.com/qbittorr
 * IP tables killswitch to prevent IP leaking when VPN connection fails
 * Configurable UID and GID for config files and /downloads for qBittorrent
 * Created with [Unraid](https://unraid.net/) in mind
-* BitTorrent port 8999 exposed by default
+* BitTorrent port 35060 exposed by default
 
 ## Run container from Docker registry
 The container is available from the Docker registry and this is the simplest way to get it  
@@ -80,8 +80,8 @@ $ docker run  -d \
 | Port | Proto | Required | Function | Example |
 |----------|----------|----------|----------|----------|
 | `8080` | TCP | Yes | qBittorrent WebUI | `8080:8080`|
-| `8999` | TCP | Yes | qBittorrent TCP Listening Port | `8999:8999`|
-| `8999` | UDP | Yes | qBittorrent UDP Listening Port | `8999:8999/udp`|
+| `35060` | TCP | Yes | qBittorrent TCP Listening Port | `35060:35060`|
+| `35060` | UDP | Yes | qBittorrent UDP Listening Port | `35060:35060/udp`|
 
 # Access the WebUI
 Access https://IPADDRESS:PORT from a browser on the same network. (for example: https://192.168.0.90:8080)
